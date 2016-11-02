@@ -95,6 +95,7 @@ router.post('/signin', function (req, res, next) {
     email: req.body.email
   })
   .then((results) => {
+    console.log('test', results);
     if (bcrypt.compareSync(req.body.password, results[0].password)) {
       req.session.user = {
         email: results[0].email,

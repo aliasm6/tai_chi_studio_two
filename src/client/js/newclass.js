@@ -1,5 +1,4 @@
 $(document).on('ready', () => {
-  console.log('connected to newclass.js');
   $('.postNewClass').on('submit', (eve)=> {
     eve.preventDefault();
     function convertTime(timeVal) {

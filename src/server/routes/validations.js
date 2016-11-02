@@ -20,7 +20,7 @@ function checkValidation(req, res, next) {
   .where('email', userEmail)
   .select('users.email')
   .then((user) => {
-    console.log(user);
+    console.log('test user', user);
     if (user.length) {
       errorMessage.push('You already have an account set up with that email.');
       return res.status(400).json({
