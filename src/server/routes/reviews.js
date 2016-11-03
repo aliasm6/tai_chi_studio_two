@@ -4,8 +4,9 @@ const knex = require('../db/knex');
 const validation = require('./validations');
 
 // get review page
-router.get('/:id', validation.checkUser, (req, res, next) => {
+router.get('/:id', (req, res, next) => {
   const id = parseInt(req.params.id);
+  console.log(id);
   knex('instructors')
   .where('id', id)
   .select('*')
