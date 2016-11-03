@@ -20,8 +20,8 @@
 ### Visit Our Site:
 ### Link to deployed site: https://tai-chi-studio-two.herokuapp.com/
 ### Log in as a manager
-### EMAIL: test1@gmail.com
-### PASSWORD: password1
+### EMAIL: test@gmail.com
+### PASSWORD: password
 
 ### Log in as a student
 ### EMAIL: test2@gmail.com
