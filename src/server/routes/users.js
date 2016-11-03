@@ -112,6 +112,7 @@ router.post('/signin', function (req, res, next) {
       var url = '/users/' + results[0].id;
       res.status(200).json(renderObject);
     } else {
+      window.alert('Login unsuccessful.');
       res.status(500).send({
         status: 'error',
         message: 'error'
